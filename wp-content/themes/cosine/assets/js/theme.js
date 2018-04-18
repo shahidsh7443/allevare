@@ -855,7 +855,6 @@
 
 jQuery(document).ready(function(){
 $=jQuery;
-var h = $('.csm2')[0].scrollHeight;
 $('.tbt #sbt').click(function(e) {
 		var ch=$('.csm2').height();
 		if(ch<2) {
@@ -872,7 +871,6 @@ $('.tbt #sbt').click(function(e) {
 		 $('.tbt #sbt').val("Readmore");
 	}
 });
-var h = $('.csm1')[0].scrollHeight;
 $('.tbt1 #sbt1').click(function(e) {
 		var ch=$('.csm1').height();
 		if(ch<2) {
@@ -889,7 +887,6 @@ $('.tbt1 #sbt1').click(function(e) {
 		 $('.tbt1 #sbt1').val("Readmore");
 	}
 });
-var h = $('.csm1')[0].scrollHeight;
 $('.tbt2 #sbt2').click(function(e) {
 		var ch=$('.csm3').height();
 		if(ch<2) {
@@ -906,7 +903,6 @@ $('.tbt2 #sbt2').click(function(e) {
 		 $('.tbt2 #sbt2').val("Readmore");
 	}
 });
-var h = $('.csm1')[0].scrollHeight;
 $('.tbt3 #sbt3').click(function(e) {
 		var ch=$('.csm4').height();
 		if(ch<2) {
