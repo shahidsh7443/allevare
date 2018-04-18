@@ -1,0 +1,123 @@
+.header-v4 {
+	#site-header {
+		#masthead {
+			#site-brand {
+				float: none;
+				margin: 0;
+				.wrapper {
+					#site-logo {
+						float: left;
+					}
+					.header-widgets {
+						float: right;
+						margin: 28px 0;
+						font-size: 14px;
+						&:after {
+							clear: both;
+							content: "";
+							display: block;
+						}
+						.widget {
+							float: right;
+							margin: 0 0 0 50px;
+							&:last-child {
+								margin: 0;
+							}
+							.info-icon {
+								line-height: 1.4;
+								&:after {
+									clear: both;
+									content: "";
+									display: block;
+								}
+								i {
+									float: left;
+									margin-right: 15px;
+									margin-top: 3px;
+									font-size: 28px;
+								}
+								.content {
+									float: right;
+								}
+							}
+						}
+					}
+				}
+			}
+			#site-navigator {
+				float: none;
+				margin: 0;
+				&.stick {
+					position: fixed;
+					top: 0;
+					left: 0;
+					right: 0;
+				}
+				.menu {
+					> li {
+						> a {
+							color: rgba(255,255,255,0.8);
+							padding-top: 15px;
+							padding-bottom: 15px;
+							position: relative;
+							&:after {
+								left: 0;
+								right: 0;
+								height: 4px;
+								content: "";
+								bottom: -1px;
+								position: absolute;
+							}
+						}
+						&:hover {
+							> a {
+								color: @white;
+							}
+						}
+					}
+					> .current-menu-item,
+					> .current-menu-ancestor {
+						> a {
+							color: @white;
+							text-shadow: 0 1px 1px rgba(0,0,0,.1);
+							background: rgba(0,0,0,0.1);
+							border-bottom-color: transparent;
+							border-top-color: transparent;
+							border-left-color: rgba(255,255,255,0.2);
+							border-right-color: rgba(255,255,255,0.2);
+						}
+					}
+					&.menu-extra {
+						.search-box {
+							.submenu {
+								.search-field {
+									&:focus {
+										border-color: transparent;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			#site-navigator-placeholder {
+				display: none;
+			}
+			.stick + #site-navigator-placeholder {
+				display: block;
+			}
+		}
+	}
+	&.admin-bar {
+		#site-header {
+			#masthead {
+				#site-navigator {
+					&.stick {
+						top: 32px;
+					}
+				}
+			}
+		}
+	}
+}

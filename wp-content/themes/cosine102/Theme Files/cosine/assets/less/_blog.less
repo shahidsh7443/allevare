@@ -1,0 +1,252 @@
+.blog,.single-post {
+	.hentry {
+		margin-bottom: 50px;
+		position: relative;
+		border-bottom: 1px solid rgba(54, 70, 115, .08);
+		padding-bottom: 50px;
+		&.sticky {
+			padding: 30px;
+			border-bottom: none;
+			.entry-header {
+				.entry-title {
+					a {
+						color: @white;
+					}
+				}
+				.entry-meta {
+					i {
+						color: @white;
+					}
+					a {
+						color: @white;
+					}
+				}
+			}
+			.entry-content {
+				color: @white;
+				.readmore {
+					.more-link {
+						color: @white;
+					}
+				}
+			}
+		}
+		.entry-cover {
+			margin-bottom: 30px;
+			a {
+				display: block;
+				position: relative;
+				background: @black;
+				&:after,&:before {
+					content: "";
+					position: absolute;
+					width: 1px;
+					height: 30px;
+					background: @white;
+					top: 50%;
+					left: 50%;
+					z-index: 9;
+					margin-top: -15px;
+					margin-left: -1px;
+					visibility: hidden;
+					.opacity(0);
+					&:extend(.transition);
+				}
+				&:before {
+					height: 1px;
+					width: 30px;
+					margin-top: -1px;
+					margin-left: -15px;
+				}
+				&:hover {
+					img {
+						.opacity(0.4);
+					}
+					&:after,&:before {
+						visibility: visible;
+						.opacity(1);
+					}
+				}
+				img {
+					&:extend(.transition);
+				}
+			}
+			&.flexslider {
+				a:hover {
+					cursor: zoom-in;
+				}
+			}
+		}
+		.entry-header {
+			margin-bottom: 30px;
+			&:after {
+				clear: both;
+				content: "";
+				display: table;
+			}
+			.entry-time {
+				text-transform: uppercase;
+				margin: 0;
+				float: left;
+				width: 85px;
+				border-right: 1px solid rgba(0,0,0,.1);
+				margin-right: 20px;
+				line-height: 1;
+				span {
+					font-size: 14px;
+					line-height: 0.7;
+					&.entry-day {
+						display: block;
+						font-size: 64px;
+					}
+				}
+			}
+			.entry-header-content {
+				overflow: hidden;
+			}
+			.entry-title {
+				font-size: 24px;
+				margin: 3px 0 10px 0;
+				text-transform: uppercase;
+			}
+			.entry-meta {
+				a {
+					color: #b9c1cf;
+				}
+				i {
+					margin-right: 5px;
+					margin-left: 15px;
+					padding-left: 15px;
+					border-left: 1px solid rgba(54, 70, 115, .08);
+					color: #b9c1cf;
+					&:first-child {
+						margin-left: 0;
+						border-left: none;
+						padding-left: 0;
+					}
+				}
+			}
+		}
+		.entry-content {
+			.readmore {
+				margin-top: 25px;
+				.more-link {
+					padding: 7px 25px;
+					display: inline-block;
+					font-weight: bold;
+					text-transform: uppercase;
+					position: relative;
+					color: @white;
+					text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+					border: 1px solid rgba(0,0,0,0.1);
+					&:after {
+						font-family: "fontAwesome";
+						content: "\f054";
+						font-size: 14px;
+						font-weight: normal;
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.single-post {
+	.hentry {
+		padding-bottom: 0;
+		border-bottom: none;
+		margin-bottom: 50px;
+		.entry-cover {
+			margin-bottom: 40px;
+		}
+		.entry-footer {
+			margin-top: 40px;
+			.entry-tags {
+				overflow: hidden;
+				strong {
+					display: none;
+				}
+				a {
+					color: @white;
+					padding: 5px 20px;
+					margin: 0 5px 5px 0;
+					float: left;
+					position: relative;
+					font-size: 14px !important;
+				}
+			}
+		}
+	}
+	.navigation {
+		margin-bottom: 50px;
+	}
+}
+
+.box {
+	margin-bottom: 50px;
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+	.box-title {
+		font-size: 20px;
+		position: relative;
+		padding-bottom: 20px;
+		overflow: hidden;
+		margin: 0 0 30px 0;
+		&:after {
+			width: 50px;
+			height: 3px;
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0px;
+		}
+	}
+	&.author-box {
+		.author-avatar {
+			float: left;
+			margin-right: 30px;
+			width: 50px;
+		}
+		.author-description {
+			overflow: hidden;
+		}
+	}
+}
+#site-wrapper {
+	.box {
+		&.related-posts-box {
+			margin-bottom: 20px;
+			.blog-grid {
+				&.blog-shortcode {
+					.hentry {
+						.entry-wrapper {
+							.box-shadow(none);
+						}
+						.entry-header {
+							position: static;
+							padding: 0;
+							margin: 0;
+							.entry-title {
+								position: static;
+								padding-bottom: 0;
+								border: none;
+								font-size: 18px;
+								&:after {
+									display: none;
+								}
+							}
+						}
+						.entry-content {
+							padding: 0;
+							margin: 15px 0 0 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
