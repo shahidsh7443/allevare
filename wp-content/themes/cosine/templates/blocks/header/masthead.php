@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) or die();
 			<?php get_template_part( 'templates/blocks/header/brand' ) ?>
 		</div>
 
-		<nav id="site-navigator" class="navigator" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">					
+		<nav id="site-navigator" class="navigator" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 			<?php
 			/**
 			 * Call actions before display primary menu

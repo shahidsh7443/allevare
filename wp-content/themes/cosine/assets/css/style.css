@@ -9676,3 +9676,96 @@ padding-top: 15px !important;
   transition: all 0.5s ease-in-out;
   box-shadow: 2px 2px 10px;
 }
+#text-13
+{
+  display: none;
+}
+.logbtn
+{
+    float: right;
+    margin-top: 25px;
+}
+.logbtn1
+{
+    float: right;
+    margin-top: 25px;
+}
+.ui-dialog
+{
+    position: fixed !important;
+    top: 90px !important;
+    right: 40px !important;
+    left: auto !important;
+}
+.applybs .userdata
+{
+  position: absolute;
+    right: 15px;
+    background: #32373c;;
+    width: 275px;
+    height: 150px;
+    padding: 10px 10px;
+        margin-top: 71px;
+        display: none;
+}
+.master:hover .userdata
+ {
+    display: block;
+    transition: all 0.9s ease-in-out;
+}
+.applybs .userdata .col-lg-6 p
+{
+  margin-bottom: 0px;
+  color: white;
+  font-family: unset;
+  text-transform: capitalize;
+  border-bottom: 1px dotted white;
+}
+.applybs .userdata .logs
+{
+  margin-top: 12px;
+  padding: 3px 10px 3px 10px;
+  height: 30px;
+  border-radius: 5px;
+}
+.applybs .userdata img  {
+    vertical-align: middle;
+    border-radius: 50%;
+    border: 1px solid #607D8B;
+    margin-top: 5px;
+}
+.logbtn .ui
+{
+    background: transparent;
+    color: #2e5888;
+    border: 1px solid #57bb60;
+}
+.applybs img {
+vertical-align: middle;
+border-radius: 50%;
+border: 1px solid #607D8B;
+margin-top: 5px;
+}
+.logbtn .fa
+{
+    margin-right: 5px;
+    font-size: 20px;
+    margin-left: 0px;
+}
+.exp
+{
+    background: #307abd;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.applybs .exp a
+{
+  color: white;
+}
+.applybs .exp a:hover
+{
+  color: white;
+}

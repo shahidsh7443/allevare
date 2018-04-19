@@ -90,3 +90,6 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+/*global $wpdb;
+$result= $wpdb->get_results("SELECT post_content FROM wp_posts WHERE post_name = 'home' AND ID = '2'");
+print_r($result);*/

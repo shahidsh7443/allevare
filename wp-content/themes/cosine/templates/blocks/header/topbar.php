@@ -18,11 +18,11 @@ $social_links    = op_option( 'social_links' );
 if ( ! isset( $social_links['__icons_ordering__'] ) ) {
 	$social_links['__icons_ordering__'] = $available_icons['__icons_ordering__'];
 }
-?>
+?>99999999
 <div id="headerbar">
 	<div class="wrapper">
 		<?php if ( op_option( 'topbar_social_links_enabled' ) ): ?>
-			
+
 			<div class="social-links">
 				<?php foreach ( $social_links['__icons_ordering__'] as $id ):
 					if ( ! isset( $available_icons[$id] ) || ! isset( $social_links[$id] ) )
@@ -48,7 +48,7 @@ if ( ! isset( $social_links['__icons_ordering__'] ) ) {
 		<?php if ( has_nav_menu( 'top' ) ): ?>
 
 			<nav class="top-navigator" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-				
+
 				<?php
 				/**
 				 * Call actions before display primary menu

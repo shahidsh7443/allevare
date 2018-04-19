@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) or die();
 		<i class="fa fa-bars"></i>
 	</a>
 	<!-- /.navigator-toggle -->
-	
+
 	<?php
 	/**
 	 * Call actions before display primary menu

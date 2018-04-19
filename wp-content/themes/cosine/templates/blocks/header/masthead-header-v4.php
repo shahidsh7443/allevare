@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) or die();
 	</div>
 	<nav id="site-navigator" data-placeholder="#site-navigator-placeholder" class="navigator" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 		<div class="wrapper">
-			
+
 			<?php
 			/**
 			 * Call actions before display primary menu
