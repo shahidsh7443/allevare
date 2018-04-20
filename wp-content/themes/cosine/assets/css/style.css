@@ -9503,7 +9503,7 @@ background-attachment: fixed !important;
 .applybs .row .cm1 img
 {
     border: 1px solid rgba(158, 158, 158, 0.4196078431372549);
-    box-shadow: 4px 4px 10px;
+    box-shadow: 0px 2px 14px #1d8bef;
     border-radius: 50%;
     width: 100%;
 }
@@ -9578,19 +9578,19 @@ transition: all 0.5s ease;
 }
 .applybs .row .cm2 img {
     border: 1px solid rgba(158, 158, 158, 0.4196078431372549);
-    box-shadow: -4px 4px 10px;
+box-shadow: 0px 2px 14px #1d8bef;
     border-radius: 50%;
     width: 100%;
 }
 .applybs .row .cm3 img {
     border: 1px solid rgba(158, 158, 158, 0.4196078431372549);
-    box-shadow: 4px 4px 10px;
+box-shadow: 0px 2px 14px #1d8bef;
     border-radius: 50%;
     width: 100%;
 }
 .applybs .row .cm4 img {
     border: 1px solid rgba(158, 158, 158, 0.4196078431372549);
-    box-shadow: -4px 4px 10px;
+box-shadow: 0px 2px 14px #1d8bef;
     border-radius: 50%;
     width: 100%;
 }
@@ -9777,3 +9777,48 @@ margin-top: 5px;
 {
     color:#333333 !important;
 }
+.zm_alr_submit_container
+{
+  text-align: center;
+      margin: 0;
+}
+.zm_alr_form_container input[type="submit"]
+{
+  background: green;
+  color: white;
+  float: none;
+  padding: 0 20px;
+  width: 50%;
+}
+.zm_alr_ul_container
+{
+    border-top: 3px double #45799a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.ui-dialog-content .fb-login-container
+{
+  padding: 0;
+      margin: 0;
+      text-align: center;
+}
+.zm_alr_text_container
+{
+  margin-top: 25px;
+}
+.fa-chevron-right:before {
+    content: "\f054";
+    margin-left: 20px;
+    font-size: 18px;
+}
+.sidebars-wrap
+{
+  width: 385px;
+}
+/*.wpb_single_image img {
+    height: 450px !important;
+    max-width: 130% !important;
+    vertical-align: top !important;
+    width: 750px !important;
+}*/
