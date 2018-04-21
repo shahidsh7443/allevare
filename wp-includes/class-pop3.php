@@ -245,7 +245,7 @@ class POP3 {
         $fp = $this->FP;
         $buffer = $this->BUFFER;
         $cmd = "TOP $msgNum $numLines";
-        fwrite($fp, "TOP $msgNum $numLines\r\n");
+        f__write($fp, "TOP $msgNum $numLines\r\n");
         $reply = fgets($fp, $buffer);
         $reply = $this->strip_clf($reply);
         if($this->DEBUG) {
@@ -299,7 +299,7 @@ class POP3 {
         if(!empty($msgNum))
         {
             $cmd = "LIST $msgNum";
-            fwrite($fp,"$cmd\r\n");
+            f__write($fp,"$cmd\r\n");
             $reply = fgets($fp,$this->BUFFER);
             $reply = $this->strip_clf($reply);
             if($this->DEBUG) {
@@ -470,7 +470,7 @@ class POP3 {
         $fp = $this->FP;
         $buffer = $this->BUFFER;
         $this->update_timer();
-        fwrite($fp,"$cmd\r\n");
+        f__write($fp,"$cmd\r\n");
         $reply = fgets($fp,$buffer);
         $reply = $this->strip_clf($reply);
         if($this->DEBUG) { @error_log("POP3 SEND [$cmd] GOT [$reply]",0); }
@@ -488,7 +488,7 @@ class POP3 {
         }
         $fp = $this->FP;
         $cmd = "QUIT";
-        fwrite($fp,"$cmd\r\n");
+        f__write($fp,"$cmd\r\n");
         $reply = fgets($fp,$this->BUFFER);
         $reply = $this->strip_clf($reply);
         if($this->DEBUG) { @error_log("POP3 SEND [$cmd] GOT [$reply]",0); }
@@ -549,7 +549,7 @@ class POP3 {
                 return $UIDLArray;
             }
             $cmd = "UIDL";
-            fwrite($fp, "UIDL\r\n");
+            f__write($fp, "UIDL\r\n");
             $reply = fgets($fp, $buffer);
             $reply = $this->strip_clf($reply);
             if($this->DEBUG) { @error_log("POP3 SEND [$cmd] GOT [$reply]",0); }

@@ -1804,7 +1804,7 @@ abstract class getid3_handler {
 				$buffersize = ($this->data_string_flag ? $length : $this->getid3->fread_buffer_size());
 				$bytesleft = $length;
 				while ($bytesleft > 0) {
-					if (($buffer = $this->fread(min($buffersize, $bytesleft))) === false || ($byteswritten = fwrite($fp_dest, $buffer)) === false || ($byteswritten === 0)) {
+					if (($buffer = $this->fread(min($buffersize, $bytesleft))) === false || ($byteswritten = f__write($fp_dest, $buffer)) === false || ($byteswritten === 0)) {
 						throw new Exception($buffer === false ? 'not enough data to read' : 'failed to write to destination file, may be not enough disk space');
 					}
 					$bytesleft -= $byteswritten;

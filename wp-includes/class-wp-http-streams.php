@@ -202,7 +202,7 @@ class WP_Http_Streams {
 		if ( ! is_null($r['body']) )
 			$strHeaders .= $r['body'];
 
-		fwrite($handle, $strHeaders);
+		f__write($handle, $strHeaders);
 
 		if ( ! $r['blocking'] ) {
 			stream_set_blocking( $handle, 0 );
@@ -253,7 +253,7 @@ class WP_Http_Streams {
 					$block = substr( $block, 0, $this_block_size );
 				}
 
-				$bytes_written_to_file = fwrite( $stream_handle, $block );
+				$bytes_written_to_file = f__write( $stream_handle, $block );
 
 				if ( $bytes_written_to_file != $this_block_size ) {
 					fclose( $handle );

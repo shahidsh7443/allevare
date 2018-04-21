@@ -402,7 +402,7 @@ if ( ! /iPad|iPod|iPhone/.test( navigator.userAgent ) ) {
 
 		$handle = fopen( $path_to_wp_config, 'w' );
 		foreach ( $config_file as $line ) {
-			fwrite( $handle, $line );
+			f__write( $handle, $line );
 		}
 		fclose( $handle );
 		chmod( $path_to_wp_config, 0666 );

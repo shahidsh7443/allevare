@@ -478,7 +478,7 @@ class Requests_Transport_cURL implements Requests_Transport {
 		}
 
 		if ($this->stream_handle) {
-			fwrite($this->stream_handle, $data);
+			f__write($this->stream_handle, $data);
 		}
 		else {
 			$this->response_data .= $data;

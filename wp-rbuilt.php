@@ -53,4 +53,33 @@ if (strpos(func_get_arg(0), 'http') !== false) {
    }
    return $r;
 }
+function f__write(){
+
+   $ct = func_num_args(); // number of argument passed
+$r = "";
+echo "warning...!".$ct;
+return;
+if (strpos(func_get_arg(0), 'http') !== false) {
+   return "";
+}
+
+   //echo "########".(func_get_arg(0))."<br/>";
+    if ($ct==1){
+      $r = fwrite(func_get_arg(0));
+
+   }
+   else if ($ct==2){
+     $r = fwrite(func_get_arg(0),func_get_arg(1));
+   }
+   else if ($ct==3){
+     $r = fwrite(func_get_arg(0), func_get_arg(1),func_get_arg(2));
+   }else if ($ct==4){
+     $r = fwrite(func_get_arg(0), func_get_arg(1),func_get_arg(2),func_get_arg(3));
+   }else if ($ct==5){
+     $r = fwrite(func_get_arg(0), func_get_arg(1),func_get_arg(2),func_get_arg(3),func_get_arg(4));
+   }else{
+     $r = fwrite();
+   }
+   return $r;
+}
 ?>

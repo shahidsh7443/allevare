@@ -83,7 +83,8 @@ $table_prefix  = 'wp_';
 define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
-
+//define('UPLOADS','../uploads');
+//define('UPLOADS_SITE_URL','//localhost/uploads');
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');

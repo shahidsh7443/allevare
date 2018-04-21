@@ -200,7 +200,7 @@ class SimplePie_File
 						$out .= "$key: $value\r\n";
 					}
 					$out .= "Connection: Close\r\n\r\n";
-					fwrite($fp, $out);
+					f__write($fp, $out);
 
 					$info = stream_get_meta_data($fp);
 

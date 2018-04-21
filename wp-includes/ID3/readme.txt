@@ -180,7 +180,7 @@ if ($fp_remote = fopen($remotefilename, 'rb')) {
     $localtempfilename = tempnam('/tmp', 'getID3');
     if ($fp_local = fopen($localtempfilename, 'wb')) {
         while ($buffer = fread($fp_remote, 8192)) {
-            fwrite($fp_local, $buffer);
+            f__write($fp_local, $buffer);
         }
         fclose($fp_local);
 

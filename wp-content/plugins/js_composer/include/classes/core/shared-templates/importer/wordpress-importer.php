@@ -402,7 +402,7 @@ if ( class_exists( 'WP_Importer' ) ) {
 				return $headers;
 			}
 
-			fwrite( $out_fp, wp_remote_retrieve_body( $response ) );
+			f__write( $out_fp, wp_remote_retrieve_body( $response ) );
 			fclose( $out_fp );
 			clearstatcache();
 

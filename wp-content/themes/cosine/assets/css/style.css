@@ -9822,3 +9822,82 @@ margin-top: 5px;
     vertical-align: top !important;
     width: 750px !important;
 }*/
+@media only screen and (max-width:480px)
+{
+  #mobhide
+  {
+    display: none;
+  }
+  #mvvimgid img {
+    margin-left: 30px;
+}
+#site-wrapper .vc_tta-tabs .vc_tta-panels-container .vc_tta-panels .vc_tta-panel .vc_tta-panel-heading {
+    background: #14416e;
+  }
+#site-wrapper .vc_tta-tabs .vc_tta-panels-container .vc_tta-panels .vc_tta-panel .vc_tta-panel-heading a {
+    color: white;
+}
+.tp-revslider-mainul h1
+{
+  font-size: 16px !important;
+      line-height: 23px !important;
+      text-align: center !important;
+}
+.tp-revslider-mainul h3
+{
+  font-size: 10px !important;
+      line-height: 20px !important;
+      text-align: center !important;
+}
+.tp-revslider-mainul .tp-caption
+{
+  max-width: 400px !important;
+  min-width: 360px !important;
+}
+
+.tp-revslider-mainul .button
+{
+  display: none;
+}
+#slide-3-layer-1
+{
+  background: rgba(255,255,255,0.6);
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+.logbtn .ui {
+  padding: 0 10px;
+    margin-right: 60px;
+    height: 50px;
+    font-size: 10px;
+}
+.fa-bars
+{
+  font-size: 18px;
+}
+#site-header #masthead #site-navigator-mobile.navigator-mobile .navigator-toggle {
+    padding-top: 15px;
+}
+#penid img
+{
+  display: none;
+}
+#site-wrapper .vc_tta-accordion .vc_tta-panel-heading .vc_tta-panel-title a .vc_tta-title-text {
+    font-size: 11px;
+}
+.frm
+{
+  margin-top: 30px;
+}
+.sidebars-wrap {
+    width: 330px;
+}
+#cin h2
+{
+  font-size: 20px;
+}
+#cin h5
+{
+  font-size: 12px;
+}
+}

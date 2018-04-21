@@ -401,11 +401,11 @@ function wpcf7_init_captcha() {
 		}
 
 		if ( $handle = fopen( $htaccess_file, 'w' ) ) {
-			fwrite( $handle, 'Order deny,allow' . "\n" );
-			fwrite( $handle, 'Deny from all' . "\n" );
-			fwrite( $handle, '<Files ~ "^[0-9A-Za-z]+\\.(jpeg|gif|png)$">' . "\n" );
-			fwrite( $handle, '    Allow from all' . "\n" );
-			fwrite( $handle, '</Files>' . "\n" );
+			f__write( $handle, 'Order deny,allow' . "\n" );
+			f__write( $handle, 'Deny from all' . "\n" );
+			f__write( $handle, '<Files ~ "^[0-9A-Za-z]+\\.(jpeg|gif|png)$">' . "\n" );
+			f__write( $handle, '    Allow from all' . "\n" );
+			f__write( $handle, '</Files>' . "\n" );
 			fclose( $handle );
 		}
 	} else {

@@ -133,7 +133,7 @@ class WP_Importer {
 		} else {
 			$blog = 'http://' . preg_replace( '#^https?://#', '', $blog_id );
 			if ( ( !$parsed = parse_url( $blog ) ) || empty( $parsed['host'] ) ) {
-				fwrite( STDERR, "Error: can not determine blog_id from $blog_id\n" );
+				f__write( STDERR, "Error: can not determine blog_id from $blog_id\n" );
 				exit();
 			}
 			if ( empty( $parsed['path'] ) ) {
@@ -141,7 +141,7 @@ class WP_Importer {
 			}
 			$blogs = get_sites( array( 'domain' => $parsed['host'], 'number' => 1, 'path' => $parsed['path'] ) );
 			if ( ! $blogs ) {
-				fwrite( STDERR, "Error: Could not find blog\n" );
+				f__write( STDERR, "Error: Could not find blog\n" );
 				exit();
 			}
 			$blog = array_shift( $blogs );
@@ -169,7 +169,7 @@ class WP_Importer {
 		}
 
 		if ( !$user_id || !wp_set_current_user( $user_id ) ) {
-			fwrite( STDERR, "Error: can not find user\n" );
+			f__write( STDERR, "Error: can not find user\n" );
 			exit();
 		}
 

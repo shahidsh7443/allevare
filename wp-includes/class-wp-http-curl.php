@@ -336,7 +336,7 @@ class WP_Http_Curl {
 		}
 
 		if ( $this->stream_handle ) {
-			$bytes_written = fwrite( $this->stream_handle, $data );
+			$bytes_written = f__write( $this->stream_handle, $data );
 		} else {
 			$this->body .= $data;
 			$bytes_written = $data_length;

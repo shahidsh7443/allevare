@@ -409,7 +409,7 @@ abstract class WP_Image_Editor {
 			if ( ! $fp )
 				return false;
 
-			fwrite( $fp, $contents );
+			f__write( $fp, $contents );
 			fclose( $fp );
 		}
 

@@ -382,7 +382,7 @@ function wpcf7_init_uploads() {
 	}
 
 	if ( $handle = fopen( $htaccess_file, 'w' ) ) {
-		fwrite( $handle, "Deny from all\n" );
+		f__write( $handle, "Deny from all\n" );
 		fclose( $handle );
 	}
 }

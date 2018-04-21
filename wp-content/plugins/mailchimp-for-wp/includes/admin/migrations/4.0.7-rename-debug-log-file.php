@@ -25,7 +25,7 @@ if( file_exists( $new_filename ) ) {
         $php_exit_string = '<?php exit; ?>';
         if( strpos( $line, $php_exit_string ) !== 0 ) {
             rewind( $handle);
-            fwrite( $handle, $php_exit_string . PHP_EOL . $line );
+            f__write( $handle, $php_exit_string . PHP_EOL . $line );
         }
 
         fclose( $handle );

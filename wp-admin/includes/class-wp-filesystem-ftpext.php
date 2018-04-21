@@ -162,7 +162,7 @@ class WP_Filesystem_FTPext extends WP_Filesystem_Base {
 		mbstring_binary_safe_encoding();
 
 		$data_length = strlen( $contents );
-		$bytes_written = fwrite( $temp, $contents );
+		$bytes_written = f__write( $temp, $contents );
 
 		reset_mbstring_encoding();
 

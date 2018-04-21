@@ -855,6 +855,10 @@
 
 jQuery(document).ready(function(){
 $=jQuery;
+$("#cancel a").on('click',function(e){
+	e.preventDefault(); });
+	$("#newsid a").on('click',function(e){
+	e.preventDefault(); });
 $('.tbt #sbt').click(function(e) {
 		var ch=$('.csm2').height();
 		if(ch<2) {
