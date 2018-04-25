@@ -5858,9 +5858,7 @@ a.woocommerce-product-gallery__trigger {
     margin-right: 10px;
     font-size: 20px;
   }
-  body #site-content #page-header {
-    background-position: 0 0 !important;
-  }
+
   body #site-footer .columns,
   body #content-bottom-widgets .columns {
     margin-bottom: 50px;
@@ -9865,6 +9863,22 @@ margin-top: 5px;
     padding-top: 5px !important;
     padding-bottom: 5px !important;
 }
+#slide-2-layer-1
+{
+  background: rgba(255,255,255,0.6);
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    margin-left: -34px !important;
+    min-height: 90px !important;
+}
+#slide-1-layer-1
+{
+  background: rgba(255,255,255,0.6);
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    margin-left: 0px !important;
+    min-height: 100px !important;
+}
 .logbtn .ui {
   padding: 0 10px;
     margin-right: 60px;
@@ -9876,7 +9890,7 @@ margin-top: 5px;
   font-size: 18px;
 }
 #site-header #masthead #site-navigator-mobile.navigator-mobile .navigator-toggle {
-    padding-top: 15px;
+    padding-top: 4px;
 }
 #penid img
 {
@@ -9899,5 +9913,74 @@ margin-top: 5px;
 #cin h5
 {
   font-size: 12px;
+}
+.logbtn1 .log {
+
+  padding: 0 30px;
+    margin-right: 60px;
+    height: 50px;
+    font-size: 14px;
+}
+#li1 .tp-bgimg
+{
+  background-position: 80% center !important;
+}
+#li2 .tp-bgimg
+{
+  background-position: 20% center !important;
+}
+#li3 .tp-bgimg
+{
+  background-position: 75% center !important;
+}
+.tp-revslider-mainul .ssl2 {
+    font-size: 10px !important;
+    line-height: 20px !important;
+    text-align: center !important;
+    float: left;
+    margin-top: -30px !important;
+    margin-left: -40px !important;
+}
+.tp-revslider-mainul .ssl3 {
+    margin-top: -10px !important;
+}
+#site-header #masthead #site-navigator-mobile.navigator-mobile.active .menu {
+  display: initial;
+width: 330px;
+}
+body #site-header #masthead #site-navigator-mobile {
+    display: inline-grid;
+}
+.applybs .userdata {
+    position: absolute;
+    right: 90px;
+    background: #32373c;
+    width: 275px;
+    height: 150px;
+    padding: 10px 10px;
+    margin-top: 75px;
+    display: none;
+}
+.applybs .cm1, .cm2, .cm3, .cm4
+{
+padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+.applybs .csm1
+{
+margin-top:0px;
+}
+.applybs .rm1 .member
+{
+margin-top:-65px;
+}
+#rev_slider_1_1_wrapper
+{
+height:525px !important;
+}
+#masthead
+{
+height:95px !important;
+
 }
 }

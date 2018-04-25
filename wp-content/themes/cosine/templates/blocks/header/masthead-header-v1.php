@@ -55,8 +55,8 @@ defined( 'ABSPATH' ) or die();
 			</div>
 			<div class="applybs">
 			<div class="row userdata">
-				<div class="col-lg-6"><img src="http://localhost/allevare/wp-content/uploads/2018/04/user.png" title="shahid"></div>
-        <div class="col-lg-6">
+				<div class="col-lg-6 col-xs-6"><img src="http://localhost/allevare/wp-content/uploads/2018/04/user.png" title="shahid"></div>
+        <div class="col-lg-6 col-xs-6">
 			<p><?php
     $current_user = wp_get_current_user();
     echo $current_user->user_login;

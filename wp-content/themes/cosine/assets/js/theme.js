@@ -855,6 +855,18 @@
 
 jQuery(document).ready(function(){
 $=jQuery;
+if($(window).width()<600)
+{
+    var ulw=$(window).width();
+    $('#menu-main-menu-1').css('width',ulw);
+}
+$("ul").find("[data-index='rs-3']").attr('id','li1' );
+$("ul").find("[data-index='rs-2']").attr('id','li2' );
+$("ul").find("[data-index='rs-1']").attr('id','li3' );
+var slw=$(window).width();
+$('#slide-3-layer-1').css('width',slw);
+$('#slide-2-layer-1').css('width',slw);
+$('#slide-1-layer-1').css('width',slw);
 $("#cancel a").on('click',function(e){
 	e.preventDefault(); });
 	$("#newsid a").on('click',function(e){
