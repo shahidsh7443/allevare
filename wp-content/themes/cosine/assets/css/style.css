@@ -9628,8 +9628,24 @@ box-shadow: 0px 2px 14px #1d8bef;
 }
 #missid
 {
-padding-bottom: 25px;
-padding-top: 15px !important;
+  padding-bottom: 25px;
+      padding-top: 15px !important;
+}
+#whatrow
+{
+  box-shadow: inset 0 0 0 2027px rgba(241,242,248,.9);
+  background-attachment: fixed !important;
+  background-position: 50% 35% !important;
+  background-size: cover !important;
+}
+#newsid
+{
+  position: relative;
+    left: -105.5px;
+    box-sizing: border-box;
+    width: 1351px;
+    padding-left: 105.5px;
+    padding-right: 105.5px;
 }
 #cnt
 {
@@ -9820,8 +9836,25 @@ margin-top: 5px;
     vertical-align: top !important;
     width: 750px !important;
 }*/
+.applybs .cm1, .cm3
+{
+  padding-left: 25px !important;
+}
+.applybs .cm2, .cm4
+{
+  padding-right: 25px !important;
+}
+.directors .col-lg-3
+{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
 @media only screen and (max-width:480px)
 {
+  .hov
+  {
+    margin-top: 35px;
+  }
   #mobhide
   {
     display: none;
@@ -9982,5 +10015,27 @@ height:525px !important;
 {
 height:95px !important;
 
+}
+.abt h3 {
+    margin-bottom: 15px !important;
+    border-bottom: 1px solid rgba(54, 70, 114, 0.6) !important;
+    margin-top: 0px !important;
+    font-size: 20px !important;
+}
+#site-wrapper #atourid .vc_tta-tabs .vc_tta-panels-container .vc_tta-panels {
+    border-right: 1px solid #c7c7c8;
+    padding-right: 20px !important;
+}
+#site-wrapper #atourid .vc_tta-tabs .vc_tta-panels-container {
+    background: white;
+    padding: 0px 15px 0 15px !important;
+}
+#newsid {
+    position: relative;
+    left: 0px;
+    box-sizing: border-box;
+    width: auto;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 }
