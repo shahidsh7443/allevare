@@ -1616,7 +1616,7 @@ article:after {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 #site-content #page-breadcrumbs {
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   border-bottom: 1px solid rgba(54, 70, 115, 0.08);
 }
 #site-content #page-breadcrumbs .wrapper {
@@ -9376,6 +9376,51 @@ ul.style2 li::after,
   -ms-transform: translate3d(0, 0, 0);
 }
 /*******************************************My CSS********************************/
+#edt
+{
+  width: 650px;
+  position: relative;
+  left: 20%;
+}
+#benefits
+{
+  background-attachment: fixed;
+  box-shadow: inset 0 0 0 2033px rgba(255,255,255,0.75);
+}
+#cm1 .vc_column-inner
+{
+  height: 350px;
+}
+#reasonid p
+{
+  text-align: justify;
+}
+.directors
+{
+    margin-top: 25px;
+}
+#collegeid
+{
+    padding: 70px 50px 70px 50px;
+}
+#tmap
+{
+    padding: 50px 50px 50px 50px;
+}
+#collegeid .fa
+{
+  font-size: 35px;
+margin-right: 5px;
+}
+#studentinfo p
+{
+    text-align: justify;
+}
+#ensure
+{
+  background-attachment: fixed;
+  box-shadow: inset 0 0 0 2333px rgba(255,255,255,0.55);
+}
 #newsid img
 {
 width: auto;
