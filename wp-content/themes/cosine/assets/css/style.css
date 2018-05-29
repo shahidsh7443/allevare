@@ -9376,6 +9376,214 @@ ul.style2 li::after,
   -ms-transform: translate3d(0, 0, 0);
 }
 /*******************************************My CSS********************************/
+#how-it-works-wrapper div.wrapper {
+    padding: 0 50px;
+    border: 4px double;
+    width: 750px;
+    margin-top: 25px;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content {
+    margin-left: -15px;
+    margin-right: -15px;
+    max-width: 520px;
+    margin: 95px auto;
+    position: relative;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content {
+    margin-left: -15px;
+    margin-right: -15px;
+    max-width: 520px;
+    margin: 95px auto;
+    position: relative;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content {
+    margin-left: -15px;
+    margin-right: -15px;
+    max-width: 520px;
+    margin: 95px auto;
+    position: relative;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content-alt {
+    background-color: #f7f0f1;
+    z-index: 2;
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+    max-width: 680px;
+    margin: 95px auto;
+    padding: 40px;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content {
+    margin-left: -15px;
+    margin-right: -15px;
+    max-width: 520px;
+    margin: 50px auto;
+    position: relative;
+        height: 250px;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content-alt {
+    background-color: #f7f0f1;
+    z-index: 2;
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+    max-width: 680px;
+    margin: 95px auto;
+    padding: 40px;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content div.content-img {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content div.content-img img.margin-10 {
+    margin-top: 10px;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content div.content-text {
+    position: relative;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 30px;
+    float: left;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content div#line-1 {
+    position: absolute;
+    width: 70px;
+    height: 325px;
+    border-top: 1px dashed black;
+    border-top-right-radius: 5px;
+    border-right: 1px dashed black;
+    border-bottom: 1px dashed black;
+    border-bottom-right-radius: 5px;
+    top: 80px;
+    right: -60px;
+    z-index: 1;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content div#line-2 {
+    position: absolute;
+    width: 40px;
+    height: 350px;
+    border-top: 1px dashed black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: 1px dashed black;
+    border-bottom: 1px dashed black;
+    top: 80px;
+    left: -60px;
+    z-index: 1;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content div.c1
+{
+  float: right;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content div.content-text h2 {
+    max-width: 350px;
+    margin: 45px 0 20px;
+    line-height: 0px;
+    letter-spacing: 1.5px;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content div.content-img img
+{
+  border-radius: 50%;
+  margin-top: 10px;
+}
+#milestone
+{
+  box-shadow: inset 0 0 0 2300px rgba(255, 255, 255, 0.8);
+    background-attachment: fixed;
+}
+#site-content #page-body {
+    margin-bottom: 0px;
+}
+#mv
+{
+    margin-top: -35px;
+    padding-bottom: 25px;
+}
+#spf .img {
+    position: relative;
+    overflow: hidden;
+    width: 410px;
+    height: 250px;
+     border-radius: 0px;
+     transition: all 0.5s ease;
+}
+#spf .img:hover {
+  transition: all 0.9s ease-in-out;
+  transform: scale(1.2);
+}
+#spf .content p {
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-top: 5px;
+}
+#spf img {
+    width: 410px;
+    transition: all 0.5s ease;
+    height: 250px;
+      border-radius: 5px;
+
+}
+#spf .content {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1));
+    margin-top: -55px;
+    position: absolute;
+    width: 410px;
+    padding-bottom: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#spf .oh
+{
+  overflow: hidden;
+  padding: 0px;
+}
+#skill p
+{
+  text-align: justify;
+}
+.overlay {
+    position: absolute;
+    top: 10px;
+      bottom: 0;
+      left: 15px;
+      right: 0;
+      height: 225px;
+      width: 225px;
+      opacity: 1;
+      transition: .5s ease;
+      background-color: rgba(48, 122, 189, 0.71);
+      border-radius: 50%;
+      -webkit-transform: scale(0);
+      transition: .3s ease;
+      /* box-shadow: 0 0 2px 1px rgba(0, 140, 186, 1); */
+      z-index: 6;
+  }
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.content-img:hover .overlay {
+  transform: scale(1)
+}
+#milestone p
+{
+  text-align: justify;
+}
+
+.page-title h2
+{
+      text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5) !important ;
+}
 #edt
 {
   width: 650px;
