@@ -10455,7 +10455,6 @@ body #site-content #page-header {
     padding-right: 20px !important;
     padding-left: 20px !important;
 }
-#gal
 #cntrw
 {
   padding-right: 10px !important;
@@ -10512,6 +10511,10 @@ body #site-content #page-header {
 #flagg h2
 {
   font-size: 20px;
+}
+#ch1, #mpp
+{
+  height: 400px;
 }
 #flagg h3
 {
