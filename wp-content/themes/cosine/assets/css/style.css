@@ -9545,6 +9545,142 @@ ul.style2 li::after,
 {
   text-align: justify;
 }
+#cntfrm h4
+{
+  color: white;
+  text-align: center;
+}
+#cntfrm
+{
+    background: #14416e;
+    padding: 5px;
+    padding-bottom: 25px;
+}
+.radio-361 span
+{
+  color: white;
+}
+#sbtt
+{
+  text-align: center;
+  margin-top: 25px;
+}
+hr
+{
+  margin-bottom: 25px;
+}
+.mem
+{
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
+#reco .applybs p
+{
+  color: inherit !important;
+  text-align: justify;
+}
+#reco .applybs .row .mimg img
+{
+  border-radius: 0px;
+  margin-left: 50px;
+}
+.rog
+{
+  margin-top: 10px;
+}
+.counter-title
+{
+    font-size: 30px;
+    font-weight: 600;
+}
+#site-wrapper .counter {
+    background: #e6e7e7;
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+    width: 350px;
+}
+#site-wrapper .counter .counter-image {
+    margin-bottom: 20px;
+    border-bottom: 3px double;
+}
+.s-color1 .fa {
+    font-size: 20px;
+}
+.stars {
+    margin-top: -15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.s-color, .s-color1, .s-color2, .s-colors1 {
+    color: #289b5b;
+}
+i.fa.fa-star:hover {
+    transform: rotate(360deg);
+    transition: all 0.8s ease;
+    font-size: 25px;
+}
+#spring h2
+{
+  padding: 5px;
+  background: #ffa500;
+      border-radius: 5px;
+  }
+#flagg h2
+  {
+    padding: 5px;
+    background: #67bb61;
+        border-radius: 5px;
+    }
+    #tabid .ext
+    {
+      width: 125px;
+      text-align: center;
+    }
+    #tabid .tdc
+    {
+      width: 350px;
+    }
+    #tabid .tc
+    {
+      text-align: center;
+    }
+  #spring .fa, #spring2 .fa
+  {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+#invest p
+{
+  text-align: justify;
+}
+#tabid td {
+    border: 1px solid ;
+    border-collapse: collapse;
+}
+#tabid th {
+    border-right: 1px solid #f9f9f9;
+}
+.s-colors1 .fa
+{
+    font-size: 10px;
+}
+i.fa.fa-star {
+    transition: all 0.5s ease;
+}
+#edh
+{
+  margin-top: 50px;
+    margin-bottom: 50px;
+}
+#fsc img
+{
+      box-shadow: 5px 10px 5px rgba(0,0,0,0.4), -5px 10px 5px rgba(0,0,0,0.1);
+}
+#rec p
+{
+  text-align: justify;
+}
 .overlay {
     position: absolute;
     top: 10px;
