@@ -9528,7 +9528,7 @@ ul.style2 li::after,
 
 }
 #spf .content {
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1));
+    background: linear-gradient(to bottom,rgba(0,0,0,0.1)0%,rgba(0,0,0,0.9)75%);
     margin-top: -55px;
     position: absolute;
     width: 410px;
@@ -9540,6 +9540,62 @@ ul.style2 li::after,
 {
   overflow: hidden;
   padding: 0px;
+}
+#site-wrapper #comp h4
+{
+    background: #14416e;
+    color: white;
+    width: 400px;
+    padding: 15px 10px 15px 51px;
+    font-size: 20px;
+    font-weight: 400;
+}
+#site-wrapper #comp
+{
+  margin-top: 25px;
+}
+#site-wrapper .vc_toggle {
+    margin: 0 0 30px 0;
+    padding: 0px 20px 20px 0px;
+    background: #f1f2f8;
+}
+#site-wrapper .vc_toggle .vc_toggle_title h4:after {
+    font-family: "FontAwesome";
+    position: absolute;
+    font-size: 16px;
+    content: "\f078";
+    left: 0;
+    top: 40%;
+    margin-top: -16px;
+    font-weight: normal;
+    width: 45px;
+    height: 42px;
+    text-align: center;
+    line-height: 45px;
+    color: #ffffff;
+}
+#site-wrapper #need h4
+{
+    background: #14416e;
+    color: white;
+    width: 600px;
+    padding: 15px 10px 15px 51px;
+    font-size: 20px;
+    font-weight: 400;
+}
+#site-wrapper #thrust h4
+{
+    background: #14416e;
+    color: white;
+    width: 400px;
+    padding: 15px 10px 15px 51px;
+    font-size: 20px;
+    font-weight: 400;
+}
+#site-wrapper .edbox {
+    background: #ffffff;
+    padding: 40px 20px 30px 20px;
+    position: relative;
 }
 #skill p
 {
@@ -10238,8 +10294,265 @@ margin-top: 5px;
     padding-left: 20px !important;
     padding-right: 20px !important;
 }
+#hided
+{
+  display: none;
+}
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+}
+body #site-content #page-header {
+    box-shadow: none !important;
+}
+.page-title h2 {
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0,0,0,0.3);
+    padding: 5px;
+    border-radius: 5px;
+}
 @media only screen and (max-width:480px)
 {
+  #hided
+  {
+    display: block !important;
+  }
+  #site-wrapper #comp h4, #need h4, #thrust h4 {
+    width: auto !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+.page-title {
+    margin-top: 125px;
+    border-radius: 5px;
+    width: auto !important;
+    margin-left: 0px !important;
+}
+#collegeid {
+    padding: 70px 20px 70px 20px !important;
+}
+#collegeid h3
+{
+  font-size: 25px;
+}
+#tmap {
+    padding: 50px 20px 50px 20px !important;
+}
+#benefits .vc_custom_1527350404987
+{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-top: 0px !important;
+}
+#benefits #edt {
+    width: auto;
+    position: relative;
+    left: 0;
+    padding: 25px 20px 25px 20px;
+}
+#quest
+{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+#milestone .vc_custom_1527578462172
+{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+#how-it-works-wrapper div.wrapper {
+    width: auto !important;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content div#line-1 {
+    width: 25px !important;
+    height: 205px !important;
+    top: 120px !important;
+    right: -30px !important;
+    z-index: 1;
+}
+#how-it-works-wrapper div.wrapper div.wrapper-section-content div#line-2 {
+    width: 25px !important;
+    height: 205px !important;
+    top: 175px !important;
+    left: -40px !important;
+    z-index: 1;
+}
+#spf
+{
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+#spf .content {
+    background: linear-gradient(to bottom,rgba(0,0,0,0.1)0%,rgba(0,0,0,0.9)75%);
+    margin-top: -55px;
+    position: absolute;
+    width: auto !important;
+    padding-bottom: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#spf h5
+{
+  font-size: 12px;
+}
+#col
+{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+#chal1 .vc_custom_1527611084855
+{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+#org
+{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+#skill .vc_custom_1527613134471
+{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+#choices .vc_custom_1527757158466
+{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+      padding-top: 0px !important;
+}
+#reco
+{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+#rec{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+#reco .applybs .row .mimg img {
+    border-radius: 0px;
+    margin-left: 0px !important;
+}
+#weoff
+{
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+#weoff h6
+{
+    text-align: justify;
+}
+#frn
+{
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+#gal
+#cntrw
+{
+  padding-right: 10px !important;
+  padding-left: 5px !important;
+  padding-bottom: 5px !important;
+}
+#bsc
+{
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+#gal
+{
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+#viva
+{
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+#investors, #barid
+{
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+#spring, #spring2
+{
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+#flagg, #flagg2
+{
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+#site-wrapper .vc_progress_bar .vc_label {
+    padding: 0;
+    top: 12px !important;
+    font-size: 8px !important;
+}
+#spring h2
+{
+  font-size: 20px;
+}
+#spring h3
+{
+  font-size: 18px;
+}
+#spring h4, #spring2 h4
+{
+  font-size: 15px;
+}
+#flagg h2
+{
+  font-size: 20px;
+}
+#flagg h3
+{
+  font-size: 18px;
+}
+table {
+    width: 300% !important;
+}
+#tabid .tdc {
+    width: 360px !important;
+}
+#flagg h4, #flagg2 h4
+{
+  font-size: 15px;
+}
+#site-wrapper .counter {
+  margin-bottom: 20px;
+}
+#key2
+{
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-bottom: 10px !important;
+}
+#key2 h3
+{
+  font-size: 20px;
+}
+#mv
+{
+  display: none !important;
+}
+p
+{
+  text-align: justify !important;
+}
+  #key
+  {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
   .hov
   {
     margin-top: 35px;
