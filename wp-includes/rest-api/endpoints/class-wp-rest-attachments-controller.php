@@ -525,7 +525,7 @@ class WP_REST_Attachments_Controller extends WP_REST_Posts_Controller {
 			return new WP_Error( 'rest_upload_file_error', __( 'Could not open file handle.' ), array( 'status' => 500 ) );
 		}
 
-		f__write( $fp, $data );
+		fwrite( $fp, $data );
 		fclose( $fp );
 
 		// Now, sideload it in.

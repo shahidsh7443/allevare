@@ -657,7 +657,7 @@ class getid3_lib
 				if (fseek($fp_src, $offset) == 0) {
 					$byteslefttowrite = $length;
 					while (($byteslefttowrite > 0) && ($buffer = fread($fp_src, min($byteslefttowrite, getID3::FREAD_BUFFER_SIZE)))) {
-						$byteswritten = f__write($fp_dest, $buffer, $byteslefttowrite);
+						$byteswritten = fwrite($fp_dest, $buffer, $byteslefttowrite);
 						$byteslefttowrite -= $byteswritten;
 					}
 					return true;
@@ -1199,7 +1199,7 @@ class getid3_lib
 		$GetDataImageSize = false;
 		if ($tempfilename = tempnam($tempdir, 'gI3')) {
 			if (is_writable($tempfilename) && is_file($tempfilename) && ($tmp = fopen($tempfilename, 'wb'))) {
-				f__write($tmp, $imgData);
+				fwrite($tmp, $imgData);
 				fclose($tmp);
 				$GetDataImageSize = @getimagesize($tempfilename, $imageinfo);
 				if (($GetDataImageSize === false) || !isset($GetDataImageSize[0]) || !isset($GetDataImageSize[1])) {

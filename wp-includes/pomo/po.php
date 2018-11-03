@@ -78,7 +78,7 @@ class PO extends Gettext_Translations {
 		$fh = fopen($filename, 'w');
 		if (false === $fh) return false;
 		$export = $this->export($include_headers);
-		$res = f__write($fh, $export);
+		$res = fwrite($fh, $export);
 		if (false === $res) return false;
 		return fclose($fh);
 	}

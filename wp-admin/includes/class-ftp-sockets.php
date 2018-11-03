@@ -187,7 +187,7 @@ class ftp_sockets extends ftp_base {
 		while(($block=@socket_read($this->_ftp_temp_sock, $this->_ftp_buff_size, PHP_BINARY_READ))!==false) {
 			if($block==="") break;
 			if($mode!=FTP_BINARY) $block=preg_replace("/\r\n|\r|\n/", $this->_eol_code[$this->OS_local], $block);
-			if(is_resource($fp)) $out+=f__write($fp, $block, strlen($block));
+			if(is_resource($fp)) $out+=fwrite($fp, $block, strlen($block));
 			else $out.=$block;
 		}
 		return $out;

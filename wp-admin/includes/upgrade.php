@@ -2575,7 +2575,7 @@ function make_site_theme_from_oldschool($theme_name, $template) {
 				// Update comments template inclusion.
 				$line = str_replace("<?php include(ABSPATH . 'wp-comments.php'); ?>", "<?php comments_template(); ?>", $line);
 
-				f__write($f, "{$line}\n");
+				fwrite($f, "{$line}\n");
 			}
 			fclose($f);
 		}
@@ -2588,8 +2588,8 @@ function make_site_theme_from_oldschool($theme_name, $template) {
 	if ($stylelines) {
 		$f = fopen("$site_dir/style.css", 'w');
 
-		f__write($f, $header);
-		f__write($f, $stylelines);
+		fwrite($f, $header);
+		fwrite($f, $stylelines);
 		fclose($f);
 	}
 
@@ -2637,7 +2637,7 @@ function make_site_theme_from_default($theme_name, $template) {
 			elseif (strpos($line, 'Description:') !== false) $line = 'Description: Your theme.';
 			elseif (strpos($line, 'Version:') !== false) $line = 'Version: 1';
 			elseif (strpos($line, 'Author:') !== false) $line = 'Author: You';
-			f__write($f, $line . "\n");
+			fwrite($f, $line . "\n");
 		}
 		fclose($f);
 	}

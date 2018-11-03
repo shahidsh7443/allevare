@@ -847,7 +847,7 @@ class Snoopy
 			socket_set_timeout($fp, $this->read_timeout);
 		$this->timed_out = false;
 
-		f__write($fp,$headers.$body,strlen($headers.$body));
+		fwrite($fp,$headers.$body,strlen($headers.$body));
 
 		$this->_redirectaddr = false;
 		unset($this->headers);

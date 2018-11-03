@@ -855,8 +855,13 @@
 
 jQuery(document).ready(function(){
 $=jQuery;
+$($(".trail-items").children()[3]).css('display','none');
 if($(window).width()<600)
 {
+var rr1=$('.oh').width();
+$('.oh img').css('width',rr1);
+
+
     var ulw=$(window).width();
     $('#menu-main-menu-1').css('width',ulw);
 }

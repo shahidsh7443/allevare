@@ -480,7 +480,7 @@ function wp_edit_theme_plugin_file( $args ) {
 		return new WP_Error( 'file_not_writable' );
 	}
 
-	$written = f__write( $f, $content );
+	$written = fwrite( $f, $content );
 	fclose( $f );
 	if ( false === $written ) {
 		return new WP_Error( 'unable_to_write', __( 'Unable to write to file.' ) );
@@ -1497,7 +1497,7 @@ function get_filesystem_method( $args = array(), $context = '', $allow_relaxed_f
 
 	if ( ! $method && isset($args['connection_type']) && 'ssh' == $args['connection_type'] && extension_loaded('ssh2') && function_exists('stream_get_contents') ) $method = 'ssh2';
 	if ( ! $method && extension_loaded('ftp') ) $method = 'ftpext';
-	if ( ! $method && ( extension_loaded('sockets') || function_exists('fsockopen') ) ) $method = 'ftpsockets'; //Sockets: Socket extension; PHP Mode: FSockopen / f__write / fread
+	if ( ! $method && ( extension_loaded('sockets') || function_exists('fsockopen') ) ) $method = 'ftpsockets'; //Sockets: Socket extension; PHP Mode: FSockopen / fwrite / fread
 
 	/**
 	 * Filters the filesystem method to use.

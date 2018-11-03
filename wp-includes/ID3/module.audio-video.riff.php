@@ -1777,7 +1777,7 @@ class getid3_riff extends getid3_handler {
 			for ($i = 0; $i < 4; $i++) {
 				$RIFFdata[($i + 4)] = $NewLengthString[$i];
 			}
-			f__write($fp_temp, $RIFFdata);
+			fwrite($fp_temp, $RIFFdata);
 			fclose($fp_temp);
 
 			$getid3_temp = new getID3();

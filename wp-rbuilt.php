@@ -53,7 +53,7 @@ if (strpos(func_get_arg(0), 'http') !== false) {
    }
    return $r;
 }
-function f__write(){
+/*function fwrite(){
    $ct = func_num_args(); // number of argument passed
 $r = "";
 _echo("f_write", func_get_arg(0));
@@ -74,5 +74,5 @@ if (strpos(func_get_arg(0), 'http') !== false) {
 }
 function _echo($f,$text){
   echo "function:".$f." and msg::".$text;
-}
+}*/
 ?>

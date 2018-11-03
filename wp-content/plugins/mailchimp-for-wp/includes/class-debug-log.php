@@ -107,7 +107,7 @@ class MC4WP_Debug_Log{
             $php_exit_string = '<?php exit; ?>';
             if( strpos( $line, $php_exit_string ) !== 0 ) {
                 rewind( $this->stream );
-                f__write( $this->stream, $php_exit_string . PHP_EOL . $line );
+                fwrite( $this->stream, $php_exit_string . PHP_EOL . $line );
             }
 
             // place pointer at end of file
@@ -118,7 +118,7 @@ class MC4WP_Debug_Log{
 		flock( $this->stream, LOCK_EX );
 
 		// write the message to the file
-		f__write( $this->stream, $message );
+		fwrite( $this->stream, $message );
 
 		// unlock file again, but don't close it for remainder of this request
 		flock( $this->stream, LOCK_UN );

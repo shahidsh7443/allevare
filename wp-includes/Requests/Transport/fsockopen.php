@@ -209,7 +209,7 @@ class Requests_Transport_fsockopen implements Requests_Transport {
 
 		$options['hooks']->dispatch('fsockopen.before_send', array(&$out));
 
-		f__write($socket, $out);
+		fwrite($socket, $out);
 		$options['hooks']->dispatch('fsockopen.after_send', array($out));
 
 		if (!$options['blocking']) {
@@ -270,7 +270,7 @@ class Requests_Transport_fsockopen implements Requests_Transport {
 
 				$size += strlen($block);
 				if ($download) {
-					f__write($download, $block);
+					fwrite($download, $block);
 				}
 				else {
 					$body .= $block;

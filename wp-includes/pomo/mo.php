@@ -102,12 +102,12 @@ class MO extends Gettext_Translations {
 		$size_of_hash = 0;
 		$hash_addr = $translations_lenghts_addr + 8 * $total;
 		$current_addr = $hash_addr;
-		f__write($fh, pack('V*', $magic, $revision, $total, $originals_lenghts_addr,
+		fwrite($fh, pack('V*', $magic, $revision, $total, $originals_lenghts_addr,
 			$translations_lenghts_addr, $size_of_hash, $hash_addr));
 		fseek($fh, $originals_lenghts_addr);
 
 		// headers' msgid is an empty string
-		f__write($fh, pack('VV', 0, $current_addr));
+		fwrite($fh, pack('VV', 0, $current_addr));
 		$current_addr++;
 		$originals_table = chr(0);
 
@@ -116,24 +116,24 @@ class MO extends Gettext_Translations {
 		foreach($entries as $entry) {
 			$originals_table .= $this->export_original($entry) . chr(0);
 			$length = $reader->strlen($this->export_original($entry));
-			f__write($fh, pack('VV', $length, $current_addr));
+			fwrite($fh, pack('VV', $length, $current_addr));
 			$current_addr += $length + 1; // account for the NULL byte after
 		}
 
 		$exported_headers = $this->export_headers();
-		f__write($fh, pack('VV', $reader->strlen($exported_headers), $current_addr));
+		fwrite($fh, pack('VV', $reader->strlen($exported_headers), $current_addr));
 		$current_addr += strlen($exported_headers) + 1;
 		$translations_table = $exported_headers . chr(0);
 
 		foreach($entries as $entry) {
 			$translations_table .= $this->export_translations($entry) . chr(0);
 			$length = $reader->strlen($this->export_translations($entry));
-			f__write($fh, pack('VV', $length, $current_addr));
+			fwrite($fh, pack('VV', $length, $current_addr));
 			$current_addr += $length + 1;
 		}
 
-		f__write($fh, $originals_table);
-		f__write($fh, $translations_table);
+		fwrite($fh, $originals_table);
+		fwrite($fh, $translations_table);
 		return true;
 	}
 

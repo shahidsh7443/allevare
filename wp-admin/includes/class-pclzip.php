@@ -2223,7 +2223,7 @@
     {
       $v_read_size = ($v_size < PCLZIP_READ_BLOCK_SIZE ? $v_size : PCLZIP_READ_BLOCK_SIZE);
       $v_buffer = fread($this->zip_fd, $v_read_size);
-      @f__write($v_zip_temp_fd, $v_buffer, $v_read_size);
+      @fwrite($v_zip_temp_fd, $v_buffer, $v_read_size);
       $v_size -= $v_read_size;
     }
 
@@ -2256,7 +2256,7 @@
     {
       $v_read_size = ($v_size < PCLZIP_READ_BLOCK_SIZE ? $v_size : PCLZIP_READ_BLOCK_SIZE);
       $v_buffer = @fread($v_zip_temp_fd, $v_read_size);
-      @f__write($this->zip_fd, $v_buffer, $v_read_size);
+      @fwrite($this->zip_fd, $v_buffer, $v_read_size);
       $v_size -= $v_read_size;
     }
 
@@ -2706,7 +2706,7 @@
         }
 
         // ----- Write the compressed (or not) content
-        @f__write($this->zip_fd, $v_content, $p_header['compressed_size']);
+        @fwrite($this->zip_fd, $v_content, $p_header['compressed_size']);
 
         }
 
@@ -2744,7 +2744,7 @@
         }
 
         // ----- Write the compressed (or not) content
-        @f__write($this->zip_fd, $v_content, $p_header['compressed_size']);
+        @fwrite($this->zip_fd, $v_content, $p_header['compressed_size']);
       }
 
       // ----- Look for a directory
@@ -2887,7 +2887,7 @@
       $v_read_size = ($v_size < PCLZIP_READ_BLOCK_SIZE ? $v_size : PCLZIP_READ_BLOCK_SIZE);
       $v_buffer = @fread($v_file_compressed, $v_read_size);
       //$v_binary_data = pack('a'.$v_read_size, $v_buffer);
-      @f__write($this->zip_fd, $v_buffer, $v_read_size);
+      @fwrite($this->zip_fd, $v_buffer, $v_read_size);
       $v_size -= $v_read_size;
     }
 
@@ -3845,9 +3845,9 @@
             $v_buffer = @fread($this->zip_fd, $v_read_size);
             /* Try to speed up the code
             $v_binary_data = pack('a'.$v_read_size, $v_buffer);
-            @f__write($v_dest_file, $v_binary_data, $v_read_size);
+            @fwrite($v_dest_file, $v_binary_data, $v_read_size);
             */
-            @f__write($v_dest_file, $v_buffer, $v_read_size);
+            @fwrite($v_dest_file, $v_buffer, $v_read_size);
             $v_size -= $v_read_size;
           }
 
@@ -3908,7 +3908,7 @@
             }
 
             // ----- Write the uncompressed data
-            @f__write($v_dest_file, $v_file_content, $p_entry['size']);
+            @fwrite($v_dest_file, $v_file_content, $p_entry['size']);
             unset($v_file_content);
 
             // ----- Closing the destination file
@@ -3979,7 +3979,7 @@
 
     // ----- Write gz file format header
     $v_binary_data = pack('va1a1Va1a1', 0x8b1f, Chr($p_entry['compression']), Chr(0x00), time(), Chr(0x00), Chr(3));
-    @f__write($v_dest_file, $v_binary_data, 10);
+    @fwrite($v_dest_file, $v_binary_data, 10);
 
     // ----- Read the file by PCLZIP_READ_BLOCK_SIZE octets blocks
     $v_size = $p_entry['compressed_size'];
@@ -3988,13 +3988,13 @@
       $v_read_size = ($v_size < PCLZIP_READ_BLOCK_SIZE ? $v_size : PCLZIP_READ_BLOCK_SIZE);
       $v_buffer = @fread($this->zip_fd, $v_read_size);
       //$v_binary_data = pack('a'.$v_read_size, $v_buffer);
-      @f__write($v_dest_file, $v_buffer, $v_read_size);
+      @fwrite($v_dest_file, $v_buffer, $v_read_size);
       $v_size -= $v_read_size;
     }
 
     // ----- Write gz file format footer
     $v_binary_data = pack('VV', $p_entry['crc'], $p_entry['size']);
-    @f__write($v_dest_file, $v_binary_data, 8);
+    @fwrite($v_dest_file, $v_binary_data, 8);
 
     // ----- Close the temporary file
     @fclose($v_dest_file);
@@ -4020,7 +4020,7 @@
       $v_read_size = ($v_size < PCLZIP_READ_BLOCK_SIZE ? $v_size : PCLZIP_READ_BLOCK_SIZE);
       $v_buffer = @gzread($v_src_file, $v_read_size);
       //$v_binary_data = pack('a'.$v_read_size, $v_buffer);
-      @f__write($v_dest_file, $v_buffer, $v_read_size);
+      @fwrite($v_dest_file, $v_buffer, $v_read_size);
       $v_size -= $v_read_size;
     }
     @fclose($v_dest_file);
@@ -5130,7 +5130,7 @@
     {
       $v_read_size = ($v_size < PCLZIP_READ_BLOCK_SIZE ? $v_size : PCLZIP_READ_BLOCK_SIZE);
       $v_buffer = fread($this->zip_fd, $v_read_size);
-      @f__write($v_zip_temp_fd, $v_buffer, $v_read_size);
+      @fwrite($v_zip_temp_fd, $v_buffer, $v_read_size);
       $v_size -= $v_read_size;
     }
 
@@ -5140,7 +5140,7 @@
     {
       $v_read_size = ($v_size < PCLZIP_READ_BLOCK_SIZE ? $v_size : PCLZIP_READ_BLOCK_SIZE);
       $v_buffer = fread($p_archive_to_add->zip_fd, $v_read_size);
-      @f__write($v_zip_temp_fd, $v_buffer, $v_read_size);
+      @fwrite($v_zip_temp_fd, $v_buffer, $v_read_size);
       $v_size -= $v_read_size;
     }
 
@@ -5153,7 +5153,7 @@
     {
       $v_read_size = ($v_size < PCLZIP_READ_BLOCK_SIZE ? $v_size : PCLZIP_READ_BLOCK_SIZE);
       $v_buffer = @fread($this->zip_fd, $v_read_size);
-      @f__write($v_zip_temp_fd, $v_buffer, $v_read_size);
+      @fwrite($v_zip_temp_fd, $v_buffer, $v_read_size);
       $v_size -= $v_read_size;
     }
 
@@ -5163,7 +5163,7 @@
     {
       $v_read_size = ($v_size < PCLZIP_READ_BLOCK_SIZE ? $v_size : PCLZIP_READ_BLOCK_SIZE);
       $v_buffer = @fread($p_archive_to_add->zip_fd, $v_read_size);
-      @f__write($v_zip_temp_fd, $v_buffer, $v_read_size);
+      @fwrite($v_zip_temp_fd, $v_buffer, $v_read_size);
       $v_size -= $v_read_size;
     }
 
@@ -5267,7 +5267,7 @@
     {
       $v_read_size = ($v_size < PCLZIP_READ_BLOCK_SIZE ? $v_size : PCLZIP_READ_BLOCK_SIZE);
       $v_buffer = fread($v_zip_temp_fd, $v_read_size);
-      @f__write($this->zip_fd, $v_buffer, $v_read_size);
+      @fwrite($this->zip_fd, $v_buffer, $v_read_size);
       $v_size -= $v_read_size;
     }
 
@@ -5559,7 +5559,7 @@
       {
         $v_read_size = ($p_size < PCLZIP_READ_BLOCK_SIZE ? $p_size : PCLZIP_READ_BLOCK_SIZE);
         $v_buffer = @fread($p_src, $v_read_size);
-        @f__write($p_dest, $v_buffer, $v_read_size);
+        @fwrite($p_dest, $v_buffer, $v_read_size);
         $p_size -= $v_read_size;
       }
     }
@@ -5569,7 +5569,7 @@
       {
         $v_read_size = ($p_size < PCLZIP_READ_BLOCK_SIZE ? $p_size : PCLZIP_READ_BLOCK_SIZE);
         $v_buffer = @gzread($p_src, $v_read_size);
-        @f__write($p_dest, $v_buffer, $v_read_size);
+        @fwrite($p_dest, $v_buffer, $v_read_size);
         $p_size -= $v_read_size;
       }
     }

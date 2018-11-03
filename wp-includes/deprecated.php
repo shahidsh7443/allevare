@@ -2849,7 +2849,7 @@ function debug_fopen( $filename, $mode ) {
  * @param mixed  $fp     Unused.
  * @param string $string Message to log.
  */
-function debug_f__write( $fp, $string ) {
+function debug_fwrite( $fp, $string ) {
 	_deprecated_function( __FUNCTION__, '3.4.0', 'error_log()' );
 	if ( ! empty( $GLOBALS['debug'] ) )
 		error_log( $string );
@@ -3676,7 +3676,7 @@ function wp_get_http( $url, $file_path = false, $red = 1 ) {
 	if ( !$out_fp )
 		return $headers;
 
-	f__write( $out_fp,  wp_remote_retrieve_body( $response ) );
+	fwrite( $out_fp,  wp_remote_retrieve_body( $response ) );
 	fclose($out_fp);
 	clearstatcache();
 
